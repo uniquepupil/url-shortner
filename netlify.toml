@@ -1,0 +1,10 @@
+# Using nano editor to open netlify.toml
+nano netlify.toml
+[build]
+  publish = "build"
+  functions = "netlify-functions"
+
+[[redirects]]
+  from = "/:shortCode"
+  to = "/.netlify/functions/redirect"
+  status = 301
